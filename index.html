@@ -16,17 +16,21 @@
         </div>
 
         <div id="quiz-screen" class="hidden">
-            <div class="progress-container">
-                <div id="progress-bar"></div>
-            </div>
+            <div class="progress-container"><div id="progress-bar"></div></div>
             <h2 id="question-text">加载中...</h2>
             <div id="options-container"></div>
         </div>
 
         <div id="result-screen" class="hidden">
             <div class="result-card">
+                <div id="result-emoji" style="font-size: 60px; margin-bottom: 10px;"></div>
                 <h2 id="result-name"></h2>
+                <div id="result-tags"></div>
                 <p id="result-desc"></p>
+                <div class="relationship-box">
+                    <div class="rel-item"><h4>💕 天作之合</h4><p id="soulmate"></p></div>
+                    <div class="rel-item"><h4>💢 命中天敌</h4><p id="enemy"></p></div>
+                </div>
                 <button onclick="location.reload()" class="retry-btn">重新测试</button>
             </div>
         </div>
